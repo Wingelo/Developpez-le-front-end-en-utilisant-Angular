@@ -1,0 +1,27 @@
+<div class="chart-container">
+  <!-- Titre de la section -->
+  <p class="char-title">Medals per Country</p>
+
+  <div class="info-container">
+    <!-- Informations supplémentaires : Nombre de JOs et Nombre de pays -->
+    <div class="char-div-composant">
+      <div>Numbers of JOs</div>
+      <div class="result">{{ numberOfJo }}</div>
+    </div>
+    <div class="char-div-composant">
+      <div>Number of countries</div>
+      <div class="result">{{ numberOfCountries }}</div>
+    </div>
+  </div>
+  <!-- Graphique Ngx-Charts -->
+  <ngx-charts-pie-chart
+    [view]="view"
+    [results]="single"
+    [labels]="showLabels"
+    [doughnut]="isDoughnut"
+    [activeEntries]="activeEntries"
+    (select)="onSelect($event)"
+    (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)">
+  </ngx-charts-pie-chart>
+</div>

@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ngx-charts-tooltip-content {
+  background-color: #04828EFF !important;
+  color: white !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ngx-charts-tooltip-content .tooltip-label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.ngx-charts-tooltip-content .tooltip-val {
+  display: inline-block;
+}
+
+.char-div-composant {
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  color: #666666;
+  border-radius: 10px;
+  border: 2px solid #04828EFF;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.char-title {
+  font-size: 24px;
+  background-color: #04828EFF;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Espace entre les deux colonnes */
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 325px; /* Largeur maximale pour s'aligner avec le reste */
+  margin-bottom: 20px;
+}
+
+.result {
+  color: black;
+  font-weight: bold;
+}
