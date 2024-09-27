@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+
+ngx-charts-pie-chart {
+  width: 100% !important;
+  height: auto !important;
+}

@@ -1,0 +1,16 @@
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="row w-100">
+    <div class="col text-center">
+      <ngx-charts-pie-chart
+        [view]="view"
+        [results]="single"
+        [labels]="showLabels"
+        [doughnut]="isDoughnut"
+        [activeEntries]="activeEntries"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)">
+      </ngx-charts-pie-chart>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ngx-charts-tooltip-content {
+  background-color: #008080 !important;  /* Couleur teal (bleu-vert) */
+  color: white !important;               /* Texte en blanc */
+  border-radius: 10px !important;        /* Coins arrondis */
+  border: none !important;               /* Pas de bordure */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ngx-charts-tooltip-content .tooltip-label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.ngx-charts-tooltip-content .tooltip-val {
+  display: inline-block;
+}
