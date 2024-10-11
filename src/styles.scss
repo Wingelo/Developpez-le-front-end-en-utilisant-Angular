@@ -50,12 +50,20 @@ body, html {
   margin-bottom: 20px;
 }
 
-.info-container {
+.info-container-2 {
   display: flex;
   justify-content: space-between; /* Espace entre les deux colonnes */
   width: 100%; /* Prend toute la largeur disponible */
   max-width: 325px; /* Largeur maximale pour s'aligner avec le reste */
   margin-bottom: 20px;
+}
+
+.info-container-3 {
+  display: flex;
+  justify-content: space-between; /* Espace entre les deux colonnes */
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 600px; /* Largeur maximale pour s'aligner avec le reste */
+  margin-bottom: 40px;
 }
 
 .result {
