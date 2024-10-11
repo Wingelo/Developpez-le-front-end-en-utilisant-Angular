@@ -1,0 +1,40 @@
+<div class="chart-container">
+  <!-- Titre de la section -->
+  <p class="char-title">{{ countryName }}</p>
+
+  <div class="info-container-3">
+    <!-- Informations supplémentaires : Nombre de JOs et Nombre de pays -->
+    <div class="char-div-composant">
+      <div>Number of entries</div>
+      <div class="result">{{ numberOfEntries }}</div>
+    </div>
+    <div class="char-div-composant">
+      <div>Total number medals</div>
+      <div class="result">{{ totalNumberMedals }}</div>
+    </div>
+    <div class="char-div-composant">
+      <div>Total number of athletes</div>
+      <div class="result">{{ totalNumberOfAthletes }}</div>
+    </div>
+
+  </div>
+
+  <div *ngIf="countryData">
+    <ngx-charts-line-chart
+      [view]="view"
+      [scheme]="'vivid'"
+      [results]="countryData"
+      [xAxis]="xAxis"
+      [yAxis]="yAxis"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [timeline]="timeline">
+    </ngx-charts-line-chart>
+  </div>
+
+  <div class="middle-button-container">
+    <button (click)="goBack()" class="btn">Retour à l'accueil</button>
+  </div>
+</div>

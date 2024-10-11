@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Le contenu prend toute la hauteur de la fenêtre */
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 1000px; /* Largeur maximale du conteneur */
+  min-height: 400px; /* Assure une hauteur minimale pour le graphique */
+  display: flex;
+  flex-direction: column; /* Organise les éléments verticalement */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  margin-top: 20px;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px; /* Largeur maximale du graphique */
+  padding: 20px;
+  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}
+
+@media (max-width: 768px) {
+  .char-title {
+    font-size: 20px; /* Taille du texte réduite sur les petits écrans */
+    padding: 8px;
+  }
+
+  .chart-container {
+    max-width: 90%; /* Réduit la largeur du conteneur sur les petits écrans */
+  }
+}
+
+.middle-button-container {
+  display: flex;
+  justify-content: center; /* Centre le bouton horizontalement */
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
