@@ -79,6 +79,8 @@ export class CountryDetailComponent implements OnInit, AfterViewInit, OnDestroy 
       const chartData = this.transformDataForChart(data);
       if (chartData.length > 0) {
         this.countryData = chartData; // Assignation des données transformées
+      } else {
+        this.router.navigate(['/404']);
       }
     });
 

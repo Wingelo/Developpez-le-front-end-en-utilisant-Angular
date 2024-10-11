@@ -14,6 +14,10 @@ const routes: Routes = [
     component: CountryDetailComponent,
   },
   {
+    path: '404',
+    component: NotFoundComponent
+  }, // Route pour la page 404
+  {
     path: '**', // wildcard
     component: NotFoundComponent,
   },
